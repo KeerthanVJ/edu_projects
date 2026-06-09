@@ -1,0 +1,15 @@
+UPLOAD Livingston "Livi 1 (ID 1)"
+UPLOAD Livingston "Livi 2 (ID 2)"
+UPLOAD CookDouglass "CD 1 (ID 3)"
+UPLOAD CookDouglass "CD 2 (ID 4)"
+LIKE Livingston 1 99
+LIKE Livingston 2 95
+LIKE CookDouglass 3 98
+LIKE CookDouglass 4 96
+FEATURE RU-NB 4
+# Expected output:
+# Featuring 4 top videos from RU-NB Overall:
+# - (ID:1, C:2, S:99, Title:Livi 1 (ID 1))
+# - (ID:3, C:3, S:98, Title:CD 1 (ID 3))
+# - (ID:4, C:3, S:96, Title:CD 2 (ID 4))
+# - (ID:2, C:2, S:95, Title:Livi 2 (ID 2))
