@@ -1,0 +1,47 @@
+ADD_COURSE 221 "Principles of Electrical Engineering I"
+ADD_COURSE 222 "Principles of Electrical Engineering II"
+ADD_COURSE 226 "Probability and Random Processes"
+ADD_COURSE 231 "Digital Logic Design"
+ADD_COURSE 252 "Programming Methodology I"
+ADD_COURSE 312 "Discrete Mathematics"
+ADD_COURSE 322 "Principles of Communication Systems"
+ADD_COURSE 331 "Computer Architecture"
+ADD_COURSE 345 "Linear Systems and Signals"
+ADD_COURSE 351 "Programming Methodology II"
+ADD_COURSE 434 "Introduction to Computer Systems"
+ADD_COURSE 437 "Digital Systems Design"
+ADD_COURSE 452 "Software Engineering"
+ADD_COURSE 448 "Capstone Design in ECE"
+ADD_PREREQ 222 221
+ADD_PREREQ 322 226
+ADD_PREREQ 322 345
+ADD_PREREQ 331 231
+ADD_PREREQ 345 222
+ADD_PREREQ 351 252
+ADD_PREREQ 434 331
+ADD_PREREQ 434 351
+ADD_PREREQ 437 331
+ADD_PREREQ 437 351
+ADD_PREREQ 452 351
+ADD_PREREQ 448 345
+GET_MIN_SEMESTERS
+# Example output:
+# --- Minimum Semesters Plan ---
+# Semester 1:
+#   231 Digital Logic Design
+#   226 Probability and Random Processes
+#   252 Programming Methodology I
+#   312 Discrete Mathematics
+#   221 Principles of Electrical Engineering I
+# Semester 2:
+#   351 Programming Methodology II
+#   331 Computer Architecture
+#   222 Principles of Electrical Engineering II
+# Semester 3:
+#   452 Software Engineering
+#   434 Introduction to Computer Systems
+#   437 Digital Systems Design
+#   345 Linear Systems and Signals
+# Semester 4:
+#   322 Principles of Communication Systems
+#   448 Capstone Design in ECE

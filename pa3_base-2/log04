@@ -1,0 +1,25 @@
+ADD_COURSE 221 "Principles of Electrical Engineering I"
+ADD_COURSE 222 "Principles of Electrical Engineering II"
+ADD_COURSE 226 "Probability and Random Processes"
+ADD_COURSE 252 "Programming Methodology I"
+ADD_COURSE 322 "Principles of Communication Systems"
+ADD_COURSE 345 "Linear Systems and Signals"
+ADD_COURSE 351 "Programming Methodology II"
+ADD_COURSE 452 "Software Engineering"
+ADD_PREREQ 222 221
+ADD_PREREQ 322 226
+ADD_PREREQ 322 345
+ADD_PREREQ 345 222
+ADD_PREREQ 351 252
+ADD_PREREQ 452 351
+GET_SEQUENTIAL
+# Example output:
+# --- Sequential Plan ---
+# 221 Principles of Electrical Engineering I
+# 226 Probability and Random Processes
+# 252 Programming Methodology I
+# 222 Principles of Electrical Engineering II
+# 345 Linear Systems and Signals
+# 322 Principles of Communication Systems
+# 351 Programming Methodology II
+# 452 Software Engineering
