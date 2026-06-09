@@ -1,0 +1,17 @@
+UPLOAD CollegeAve "CA 1 (ID 1)"
+UPLOAD CollegeAve "CA 2 (ID 2)"
+UPLOAD CollegeAve "CA 3 (ID 3)"
+UPLOAD Busch "B 1 (ID 4)"
+LIKE CollegeAve 1 100
+LIKE CollegeAve 2 98
+LIKE CollegeAve 3 96
+LIKE Busch 4 99
+FEATURE RU-NB 4
+PEEK Busch
+# Expected output:
+# Featuring 4 top videos from RU-NB Overall:
+# - (ID:1, C:0, S:100, Title:CA 1 (ID 1))
+# - (ID:4, C:1, S:99, Title:B 1 (ID 4))
+# - (ID:2, C:0, S:98, Title:CA 2 (ID 2))
+# - (ID:3, C:0, S:96, Title:CA 3 (ID 3))
+# No videos to show on Busch campus.

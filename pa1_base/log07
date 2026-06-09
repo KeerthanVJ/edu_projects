@@ -1,0 +1,29 @@
+UPLOAD CollegeAve "CA 1 (ID 1)"
+UPLOAD Busch "B 1 (ID 2)"
+UPLOAD Livingston "L 1 (ID 3)"
+UPLOAD CookDouglass "CD 1 (ID 4)"
+UPLOAD CollegeAve "CA 2 (ID 5)"
+LIKE CollegeAve 1 100
+LIKE Busch 2 99
+LIKE Livingston 3 101
+LIKE CookDouglass 4 98
+LIKE CollegeAve 5 80
+PEEK Livingston
+FEATURE RU-NB 3
+LIST
+# Expected output:
+# Top video from Livingston: (ID:3, C:2, S:101, Title:L 1 (ID 3))
+# Featuring 3 top videos from RU-NB Overall:
+# - (ID:3, C:2, S:101, Title:L 1 (ID 3))
+# - (ID:1, C:0, S:100, Title:CA 1 (ID 1))
+# - (ID:2, C:1, S:99, Title:B 1 (ID 2))
+# --- MaxHeap Status by Campus ---
+# CollegeAve:
+# - (ID:5, C:0, S:80, Title:CA 2 (ID 5))
+# Busch:
+#  (empty)
+# Livingston:
+#  (empty)
+# CookDouglass:
+# - (ID:4, C:3, S:98, Title:CD 1 (ID 4))
+# ------------------------------

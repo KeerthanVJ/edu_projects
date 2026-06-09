@@ -1,0 +1,12 @@
+UPLOAD Livingston "Livi 1 (ID 1)"
+UPLOAD Livingston "Livi 2 (ID 2)"
+UPLOAD Livingston "Livi 3 (ID 3)"
+LIKE Livingston 1 50
+LIKE Livingston 2 30
+LIKE Livingston 3 40
+PEEK Livingston
+LIKE Livingston 3 25
+PEEK Livingston
+# Expected output:
+# Top video from Livingston: (ID:1, C:2, S:50, Title:Livi 1 (ID 1))
+# Top video from Livingston: (ID:3, C:2, S:65, Title:Livi 3 (ID 3))

@@ -1,0 +1,11 @@
+UPLOAD CollegeAve "CA 1 (ID 1)"
+UPLOAD CollegeAve "CA 2 (ID 2)"
+UPLOAD Busch "B 1 (ID 3)"
+LIKE CollegeAve 2 10
+LIKE CollegeAve 1 5
+LIKE Busch 3 25
+PEEK CollegeAve
+PEEK Busch
+# Expected output:
+# Top video from CollegeAve: (ID:2, C:0, S:10, Title:CA 2 (ID 2))
+# Top video from Busch: (ID:3, C:1, S:25, Title:B 1 (ID 3))
